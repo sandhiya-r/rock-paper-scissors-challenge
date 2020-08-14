@@ -5,19 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel = "stylesheet" href="style.css">
+
   <title>Frontend Mentor | Rock, Paper, Scissors</title>
 
-  Score
-  Rules
-
-  You Picked
-  The House Picked
-
-  You Win
-  You Lose
-
-  Play Again
+ 
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
@@ -25,13 +18,34 @@
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
-<body>
 
+<body>
+  <div class="container">
+    <header>
+      <h1>
+        <span>ROCK</span>
+        <span>PAPER</span>
+        <span>SCISSORS</span></h1>
+      <div class="score-container">
+        <h4>SCORE</h4>
+        <p class = "score">0<p>
+      </div>
+    </header>
+
+    <section id="game">
+      <button class="game-btn paper-btn"><span class = "wrapper"><img src = "images/icon-paper.svg" alt="paper-icon"></span></button>
+      <button class="game-btn scissors-btn"><span class = "wrapper"><img src = "images/icon-scissors.svg" alt="scissors-icon"></span></button>
+      <button class="game-btn rock-btn"><span class = "wrapper"><img src = "images/icon-rock.svg" alt="rock-icon"></span></button>
+    </section>
+
+    <section id="footer">
+      <button class="rules-btn" href="images/image-rules.svg">RULES</button>
+    </section>
+  </div>
 
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+
+
+  <script src="script.js" charset="utf-8" defer></script>
 </body>
 </html>
